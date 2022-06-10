@@ -1,6 +1,9 @@
 package aplicacao;
 
+import java.util.Scanner;
+
 import dominio.Pessoa;
+import processos.DigitoUnico;
 
 public class Programa {
     
@@ -11,5 +14,16 @@ public class Programa {
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
+
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Informe um nome: ");
+        String nome = String.valueOf(entrada.nextLine());
+        System.out.println("Informe um número inteiro: ");
+        Integer numberFim = Integer.parseInt(String.valueOf(entrada.nextInt()));
+        entrada.close();
+        DigitoUnico.digitounico(nome,numberFim);
+        
     }
+
+    
 }

@@ -7,7 +7,6 @@ public class DigitoUnico {
         char[] digitosLista = numberStr.toCharArray();
         Integer num = 0;
         Integer cont = 0;
-        Boolean active = true;
         // System.out.println("ok1");
         for (int i =0; i < digitosLista.length; i++) {
             num = num + Integer.parseInt(String.valueOf(digitosLista[i]));
@@ -20,7 +19,7 @@ public class DigitoUnico {
         cont = 0;
         char[] digitosLista2 = numberStr2.toCharArray();
         
-        for(int x = 0; x < digitosLista2.length;x++){
+        for (int x = 0; x < digitosLista2.length;x++){
             num = num + Integer.parseInt(String.valueOf(digitosLista2[x]));
             System.out.println((cont+1)+"º valor de num: "+num);
             cont++;
